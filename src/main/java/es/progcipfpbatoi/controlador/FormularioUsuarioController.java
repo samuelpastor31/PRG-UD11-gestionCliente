@@ -5,23 +5,18 @@ import es.progcipfpbatoi.modelo.repositorios.UsuariosRepository;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
-import java.util.List;
 import java.util.ResourceBundle;
 
-public class UsuarioController implements Initializable {
+public class FormularioUsuarioController implements Initializable {
     @FXML
     private TextField nombreTextField;
 
@@ -63,18 +58,7 @@ public class UsuarioController implements Initializable {
 
     }
 
-    @FXML
-    private void handleSelectedItem(MouseEvent event) {
-        try {
-            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            Usuario usuario = new Usuario();
-            UsuarioDetailControler usuarioDetailControler = new UsuarioDetailControler(usuario, usuariosRepository);
-            ChangeScene.change(stage, usuarioDetailControler, "/vista/insert_users.fxml");
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
 
-    }
     public ObservableList<Usuario> getData(){
         return FXCollections.observableArrayList(usuariosRepository.findAll());
     }
