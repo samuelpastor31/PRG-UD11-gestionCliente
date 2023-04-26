@@ -117,7 +117,7 @@ public class FormularioUsuarioController implements Initializable {
         }
 
         if (apellidos.length()<=5||nombre.length()>20){
-            mostrarAlertaError("Nombre debe tener mas de 5 y menos de 20 caracteres");
+            mostrarAlertaError("Apellidos deben tener mas de 5 y menos de 20 caracteres");
             return;
         }
 
