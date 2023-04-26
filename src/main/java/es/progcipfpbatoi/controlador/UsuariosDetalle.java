@@ -55,11 +55,14 @@ public class UsuariosDetalle implements Initializable {
 
     private UsuariosRepository usuariosRepository;
 
-    public UsuariosDetalle( Usuario usuarioUsuarios,UsuariosRepository usuariosRepository) {
+    public UsuariosDetalle( Usuario usuario,UsuariosRepository usuariosRepository) {
         this.usuariosRepository = usuariosRepository;
         this.usuario = usuario;
     }
 
+    public void setNombreTextField(){
+        nombreTextField.getText();
+    }
     public void setUsuariosRepository(UsuariosRepository usuariosRepository) {
         this.usuariosRepository = usuariosRepository;
     }
@@ -68,8 +71,23 @@ public class UsuariosDetalle implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        usuarioListView.setItems(getData());
-        usuarioListView.setCellFactory((ListView<Usuario> l) -> new TaskListViewCellControler(usuariosRepository));
+        nombreTextField.setText(usuario.getNombre());
+        nombreTextField.setEditable(false);
+        apellidosTextField.setText(usuario.getApellidos());
+        apellidosTextField.setEditable(false);
+        correoTextField.setText(usuario.getEmail());
+        correoTextField.setEditable(false);
+        telefonoTextField.setText(usuario.getTelefonoMovil());
+        telefonoTextField.setEditable(false);
+        fechaNacimientoDatePicker.chronologyProperty();
+        fechaNacimientoDatePicker.setEditable(false);
+        codigoPostalTextField.setText(usuario.getCodigoPostal());
+        codigoPostalTextField.setEditable(false);
+        passwordPasswordField.setText(usuario.getPassword());
+        passwordPasswordField.setEditable(false);
+        repetirPasswordField.setText(usuario.getPassword());
+        repetirPasswordField.setEditable(false);
+
     }
 
 

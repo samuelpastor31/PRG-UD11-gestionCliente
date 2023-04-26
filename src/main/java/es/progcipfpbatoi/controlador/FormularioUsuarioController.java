@@ -111,6 +111,16 @@ public class FormularioUsuarioController implements Initializable {
             return;
         }
 
+        if (nombre.length()<=5||nombre.length()>20){
+            mostrarAlertaError("Nombre debe tener mas de 5 y menos de 20 caracteres");
+            return;
+        }
+
+        if (apellidos.length()<=5||nombre.length()>20){
+            mostrarAlertaError("Nombre debe tener mas de 5 y menos de 20 caracteres");
+            return;
+        }
+
 
         Usuario usuario = new Usuario();
         usuario.setNombre(nombre);

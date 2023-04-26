@@ -38,6 +38,8 @@ public class UsuariosControler implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         usuarioListView.setItems(getData());
+        usuarioListView.setItems(getData());
+        usuarioListView.setCellFactory((ListView<Usuario> l) -> new TaskListViewCellControler(usuariosRepository));
 
     }
 
