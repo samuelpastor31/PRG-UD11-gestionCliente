@@ -95,6 +95,21 @@ public class FormularioUsuarioController implements Initializable {
         String password = passwordPasswordField.getText();
         String repetirPassword = repetirPasswordField.getText();
 
+
+        if (!Validator.isValidPhoneNumber(telefonoMovil)){
+            mostrarAlertaError("Telefono incorrecto : Debe empezar por el prefijo internacional: 0034, +34 o 34.\n" +
+                    "Seguida del número de móvil: 9 dígitos que empieza por 6 o 7\n" +
+                    "Tipo de dato numérico.\n");
+            return;
+        }
+
+        if (!Validator.isValidEmail(correoElectronico)){
+            mostrarAlertaError("Correo electrónico incorrecto : \n" +
+                    "Mayúsculas y minúsculas del alfabeto inglés\n" +
+                    "Números del 0 al 9 \n" +
+                    "Puede contener puntos pero no al inicio, al final o repetirse. \n");
+        }
+
         if (nombre.isEmpty() || apellidos.isEmpty() || correoElectronico.isEmpty()
                 || codigoPostal.isEmpty() || telefonoMovil.isEmpty() || password.isEmpty() || repetirPassword.isEmpty()) {
             mostrarAlertaError("Debe completar todos los campos");
