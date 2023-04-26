@@ -16,6 +16,34 @@ public class Usuario {
     private LocalDate fecha;
     private String password;
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getCodigoPostal() {
+        return codigoPostal;
+    }
+
+    public String getTelefonoMovil() {
+        return telefonoMovil;
+    }
+
+    public LocalDate getFecha() {
+        return fecha;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -46,5 +74,14 @@ public class Usuario {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public boolean empiezaPor(String text) {
+        return this.nombre.startsWith(text);
+    }
+
+    @Override
+    public String toString() {
+        return "Nombre y apellidos: "+nombre +" "+apellidos +"  Email: "+ email +"  Fecha: "+ fecha +"  Codigo Postal: "+ codigoPostal + " Telefono: "+telefonoMovil;
     }
 }

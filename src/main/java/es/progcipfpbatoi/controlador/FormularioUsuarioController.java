@@ -1,6 +1,7 @@
 package es.progcipfpbatoi.controlador;
 
 import es.progcipfpbatoi.modelo.entidades.Usuario;
+import es.progcipfpbatoi.modelo.repositorios.InMemoryUsuariosRepository;
 import es.progcipfpbatoi.modelo.repositorios.UsuariosRepository;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -14,6 +15,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class FormularioUsuarioController implements Initializable {
@@ -47,9 +49,14 @@ public class FormularioUsuarioController implements Initializable {
     @FXML
     private Button guardarButton;
 
+
     private UsuariosRepository usuariosRepository;
 
     public void setUsuariosRepository(UsuariosRepository usuariosRepository) {
+        this.usuariosRepository = usuariosRepository;
+    }
+
+    public FormularioUsuarioController(UsuariosRepository usuariosRepository) {
         this.usuariosRepository = usuariosRepository;
     }
 
@@ -64,8 +71,19 @@ public class FormularioUsuarioController implements Initializable {
     }
 
     @FXML
-    void guardarUsuario() {
+    void listaUsuarios(MouseEvent event){
 
+        try {
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            UsuariosControler usuariosControler = new UsuariosControler(usuariosRepository);
+            ChangeScene.change(stage, usuariosControler, "/vista/users_list.fxml");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    @FXML
+    void guardarUsuario() {
 
         String nombre = nombreTextField.getText();
         String apellidos = apellidosTextField.getText();
@@ -104,9 +122,8 @@ public class FormularioUsuarioController implements Initializable {
         usuario.setFecha(fechaNacimiento);
         usuario.setPassword(password);
 
-
         usuariosRepository.save(usuario);
-
+        System.out.println("Usuario guardado con exito");
     }
 
     private void mostrarAlertaError(String mensaje) {

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="494.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="510.0" prefWidth="410.0">
+         <children>
+            <SplitPane dividerPositions="0.178714859437751" orientation="VERTICAL" prefHeight="500.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="419.0">
+                     <children>
+                        <Label layoutX="257.0" layoutY="64.0" onMouseClicked="#listaUsuarios" text="lista de usuarios" textFill="#104ec9" underline="true" />
+                        <Label alignment="CENTER" layoutX="86.0" layoutY="29.0" text="Detalle Usuario" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="49.0" layoutY="64.0" text="Insertar un nuevo usuario en la " textFill="#6f6f6f" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <TextField fx:id="nombreTextField" layoutX="128.0" layoutY="10.0" prefHeight="37.0" prefWidth="238.0" promptText="Ada" />
+                        <TextField fx:id="apellidosTextField" layoutX="128.0" layoutY="60.0" prefHeight="37.0" prefWidth="238.0" promptText="Lovelace" />
+                        <TextField fx:id="correoTextField" layoutX="128.0" layoutY="110.0" prefHeight="37.0" prefWidth="238.0" promptText="ada@lovelace.com" />
+                        <TextField fx:id="telefonoTextField" layoutX="128.0" layoutY="160.0" prefHeight="37.0" prefWidth="238.0" promptText="234235235123" />
+                        <TextField fx:id="codigoPostalTextField" layoutX="128.0" layoutY="260.0" prefHeight="37.0" prefWidth="238.0" promptText="000000" />
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="16.0" prefWidth="100.0" text="Nombre" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="121.0" prefHeight="16.0" prefWidth="100.0" text="email" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="71.0" prefHeight="16.0" prefWidth="100.0" text="Apellidos" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="171.0" prefHeight="16.0" prefWidth="100.0" text="telefono" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="221.0" prefHeight="16.0" prefWidth="100.0" text="birthday" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="271.0" prefHeight="16.0" prefWidth="100.0" text="Codigo Postal" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="321.0" prefHeight="16.0" prefWidth="100.0" text="Password" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="371.0" prefHeight="16.0" prefWidth="100.0" text="Repetir Password" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="fechaNacimientoDatePicker" layoutX="128.0" layoutY="209.0" prefHeight="37.0" prefWidth="238.0" promptText="05/11/2021" />
+                        <PasswordField fx:id="passwordPasswordField" layoutX="128.0" layoutY="309.0" prefHeight="37.0" prefWidth="238.0" promptText="000000" />
+                        <PasswordField fx:id="repetirPasswordField" layoutX="128.0" layoutY="360.0" prefHeight="37.0" prefWidth="238.0" promptText="000000" />
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -21,8 +21,24 @@ public class InMemoryUsuariosRepository implements UsuariosRepository{
         return usuarios.add(usuario);
     }
 
+    @Override
+    public ArrayList<Usuario> findAll(String text) {
+        ArrayList<Usuario>usuariosFiltrados = new ArrayList<>();
+        for (Usuario usuario: usuarios) {
+            if (usuario.empiezaPor(text)) {
+                usuariosFiltrados.add(usuario);
+            }
+        }
+
+        return usuariosFiltrados;
+    }
+
     private void init(){
-        this.usuarios.add(new Usuario());
+        Usuario usuario = new Usuario();
+        usuario.setNombre("Samuel");
+        usuario.setApellidos("Pastor Pinillos");
+        usuario.setEmail("samuelpastorpinillos@gmail.com");
+        this.usuarios.add(usuario);
     }
 
 

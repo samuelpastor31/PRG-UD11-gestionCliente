@@ -8,4 +8,7 @@ public interface UsuariosRepository {
 
     ArrayList<Usuario>findAll();
     boolean save(Usuario usuario);
+    ArrayList<Usuario> findAll(String text);
+
+
 }
