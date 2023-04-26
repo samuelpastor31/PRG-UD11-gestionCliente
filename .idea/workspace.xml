@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05a20480-ddbf-488b-8766-c760a944ee7f" name="Changes" comment="Acabado">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/vista/list_item.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vista/list_item.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/vista/users_list.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vista/users_list.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="05a20480-ddbf-488b-8766-c760a944ee7f" name="Changes" comment="Acabado" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +74,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fde70d2b-4cbc-4910-af95-016ebcfdff91" name="Changes" comment="" />
+      <changelist id="05a20480-ddbf-488b-8766-c760a944ee7f" name="Changes" comment="Acabado" />
       <created>1681508083874</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -126,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682522748613</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Acabado">
+      <created>1682534434044</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682534434044</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
