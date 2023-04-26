@@ -29,7 +29,7 @@
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
-                  <ListView fx:id="usuarioListView" prefHeight="295.0" prefWidth="678.0" />
+                  <ListView fx:id="usuarioListView" prefHeight="295.0" prefWidth="878.0" />
                </children>
             </AnchorPane>
         </items>

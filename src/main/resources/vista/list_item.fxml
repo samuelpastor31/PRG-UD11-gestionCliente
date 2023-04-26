@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane fx:id="root" prefHeight="39.0" prefWidth="349.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="root" prefHeight="39.0" prefWidth="449.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label fx:id="descriptionLabel" layoutX="14.0" layoutY="5.0" prefHeight="35.0" prefWidth="575.0" text="Label" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="5.0" />
+      <Label fx:id="descriptionLabel" layoutX="14.0" layoutY="5.0" prefHeight="35.0" prefWidth="597.0" text="Label" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="5.0" />
       <ImageView fitHeight="15.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="15.0" />
       <Hyperlink layoutX="619.0" layoutY="12.0" onMouseClicked="#handleSelectedItemViewDetail" text="VerDetalles" />
    </children>

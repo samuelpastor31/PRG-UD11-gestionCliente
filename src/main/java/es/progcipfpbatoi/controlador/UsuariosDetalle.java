@@ -79,7 +79,7 @@ public class UsuariosDetalle implements Initializable {
         correoTextField.setEditable(false);
         telefonoTextField.setText(usuario.getTelefonoMovil());
         telefonoTextField.setEditable(false);
-        fechaNacimientoDatePicker.chronologyProperty();
+        fechaNacimientoDatePicker.setValue(usuario.getFecha());
         fechaNacimientoDatePicker.setEditable(false);
         codigoPostalTextField.setText(usuario.getCodigoPostal());
         codigoPostalTextField.setEditable(false);

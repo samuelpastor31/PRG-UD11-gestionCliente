@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fde70d2b-4cbc-4910-af95-016ebcfdff91" name="Changes" comment="Acabado">
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/progcipfpbatoi/controlador/FormularioUsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/progcipfpbatoi/controlador/FormularioUsuarioController.java" afterDir="false" />
+    <list default="true" id="05a20480-ddbf-488b-8766-c760a944ee7f" name="Changes" comment="Acabado">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vista/list_item.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vista/list_item.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vista/users_list.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vista/users_list.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
