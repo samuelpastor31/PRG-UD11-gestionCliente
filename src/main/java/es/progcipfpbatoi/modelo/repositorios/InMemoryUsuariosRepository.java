@@ -2,6 +2,7 @@ package es.progcipfpbatoi.modelo.repositorios;
 
 import es.progcipfpbatoi.modelo.entidades.Usuario;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class InMemoryUsuariosRepository implements UsuariosRepository{
@@ -38,6 +39,10 @@ public class InMemoryUsuariosRepository implements UsuariosRepository{
         usuario.setNombre("Samuel");
         usuario.setApellidos("Pastor Pinillos");
         usuario.setEmail("samuelpastorpinillos@gmail.com");
+        usuario.setTelefonoMovil("63347311");
+        usuario.setFecha(LocalDate.now());
+        usuario.setCodigoPostal("0432423");
+        usuario.setPassword("Batoi@1234");
         this.usuarios.add(usuario);
     }
 

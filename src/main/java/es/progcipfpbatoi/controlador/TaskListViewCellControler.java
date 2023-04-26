@@ -67,7 +67,7 @@ public class TaskListViewCellControler extends ListCell<Usuario> {
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             Usuario user = usuario;
             UsuariosDetalle userViewFormComplete = new UsuariosDetalle(user,usuariosRepository);
-            ChangeScene.change(stage, userViewFormComplete, "/vista/UsuariosDetalle.fxml");
+            ChangeScene.change(stage, userViewFormComplete, "/vista/users_detail.fxml");
         } catch (IOException e) {
             e.printStackTrace();
         }
